@@ -1,4 +1,4 @@
-import { SafeAreaView, View, Text} from "react-native";
+import { SafeAreaView, View, Text, TouchableOpacity} from "react-native";
 import { styles } from "./style";
 
 
@@ -9,8 +9,12 @@ export default function Onboarding() {
             <View style={styles.container}>
                 <Text style={styles.title}>Weather Forecast App</Text>
                 <Text style={styles.by}>by</Text>
-                <Text style={styles.name}></Text>
+                <Text style={styles.name}>Awelewa Emmanuel Kanyinsola</Text>
+                <Text style={styles.name}>csc/2019/1113</Text>
             </View>
+            <TouchableOpacity style={styles.btnContainer}>
+                <Text style={styles.btnText}>Proceed</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     )
 }
